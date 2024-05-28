@@ -8,7 +8,7 @@
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg" style="background-color: #FBF9E5;">
+  <nav class="navbar navbar-expand-lg">
     <a class="navbar-brand" href="#">
       <img src="img/LarApels.png" alt="E-Shop Logo" style="height: 80px;">
       <img src="img/TEXTLOGO.png" alt="E-Shop Logo" style="height: 50px;">
@@ -19,13 +19,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Products</a>
+          <a class="nav-link" href="#products">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
@@ -34,15 +34,15 @@
     </div>
   </nav>
 
-  <header class="banner">
-    <div class="container text-center overlay">
-      <h1>Fruit Sandwich LarApels</h1>
+  <header id="home" class="banner">
+    <div class="container text-center banner-text">
+      <h1>Welcome to LarApels</h1>
+      <p>Experience the freshness of fruits with convenience</p>
       <a href="#" class="btn btn-primary btn-lg">PRE ORDER</a>
     </div>
   </header>
   
-
-  <div class="container my-5">
+  <div id="products" class="container my-5">
     <h2 class="text-center mb-4">Featured Products</h2>
     <div class="row">
       <!-- Product 1 -->
@@ -80,28 +80,33 @@
       </div>
     </div>
   </div>
-  <div class="container my-5">
-    <h2 class="text-center mb-4">Testimonials</h2>
-    <!-- Tempatkan testimoni atau konten lainnya di sini -->
-  </div>
-  
-  <footer class="text-light py-4 text-center" style="background-color: #343a40;">
-    <div class="footer-landingpage d-flex justify-content-between align-items-center">
-      <div class="contact-info">
-        <a href="#"><img src="img/facebook.png" alt="Facebook" style="max-width: 50px; height: auto;""></a>
-        <a href="#"><img src="img/instagram.png" alt="Instagram" style="max-width: 50px; height: auto;""></a>
-        <a href="tel:+6281380940084"><img src="img/whatsapp.png" style="max-width: 50px; height: auto;"></a>
+
+  <div id="about" class="container-fluid my-5 about-section">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p>LarApels adalah sebuah inovasi yang menggabungkan rasa segar buah-buahan dengan kepraktisan seperti framework Laravel. Kami menyediakan sandwich buah yang unik, memberikan pengalaman menyegarkan dan memuaskan.</p>
+        </div>
+        <div class="col-md-6">
+          <p>Lavarel yang memiliki banyak library menganalogikan sandwich memiliki beragam buah yang bisa dijadikan toping. sandwich buah sendiri merupakan camilan khas Jepang yang sangat ikonik. sandwich buah diisi dengan potongan-potongan buah dan dibalur whipped cream.</p>
+        </div>
       </div>
-      <div class="social-icons">
-        <!-- Tambahkan ikon media sosial di sini -->
-        
+    </div>
+  </div>
+
+  <footer id="contact" class="text-light py-4 text-center">
+    <div class="footer-landingpage container">
+      <div class="contact-info">
+        <a href="#"><img src="img/facebook.png" alt="Facebook" style="max-width: 50px; height: auto;"></a>
+        <a href="#"><img src="img/instagram.png" alt="Instagram" style="max-width: 50px; height: auto;"></a>
+        <a href="tel:+6281380940084"><img src="img/whatsapp.png" style="max-width: 50px; height: auto;"></a>
       </div>
       <div class="copyright">
         © 2024 LarApels. All rights reserved.
       </div>
     </div>
   </footer>
-
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>

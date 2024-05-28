@@ -1,42 +1,42 @@
 /* Gaya untuk latar belakang dan teks */
 body {
-  background-color: #f5f5f5; /* Warna latar belakang abu-abu terang */
-  color: #333; /* Warna teks abu-abu gelap untuk kontras */
+  background-color: #f5f5f5;
+  color: #333;
 }
 
 /* Gaya untuk navbar */
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 1000; /* Pastikan navbar tetap di atas konten */
-  background-color: #FBF9E5; /* Warna latar belakang navbar */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan di bawah navbar */
+  z-index: 1000;
+  background-color: #FBF9E5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .navbar-brand {
-  flex-grow: 1; /* Memperluas navbar brand agar mengambil ruang yang tersisa */
+  flex-grow: 1;
 }
 
 .navbar .navbar-collapse {
-  justify-content: center; /* Meratakan link navbar di tengah */
+  justify-content: center;
 }
 
 .navbar .navbar-nav {
-  display: flex; /* Mengatur menu navbar menjadi flexbox */
-  justify-content: center; /* Meratakan menu navbar di tengah */
+  display: flex;
+  justify-content: center;
 }
 
 .navbar .nav-item {
-  margin: 0 10px; /* Menambahkan jarak antara setiap item navbar */
+  margin: 0 10px;
 }
 
 .navbar .nav-link {
-  color: #6c757d; /* Warna teks abu-abu gelap */
+  color: #6c757d;
   transition: color 0.3s;
 }
 
 .navbar .nav-link:hover {
-  color: #495057; /* Warna teks abu-abu lebih gelap saat dihover */
+  color: #495057;
 }
 
 /* Gaya untuk header banner */
@@ -46,22 +46,19 @@ body {
   background-size: 1200px 400px;
   background-position: center;
   height: 400px;
-  display: flex; /* Membuat konten di dalamnya menjadi fleksibel */
-  justify-content: center; /* Meratakan konten secara horizontal */
-  align-items: center; /* Meratakan konten secara vertikal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
-/* Gaya untuk teks di atas banner */
 .banner-text {
-  color: white;
   text-align: center;
-  z-index: 1;
 }
 
 .banner-text h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: white;
 }
 
 .banner-text p {
@@ -97,19 +94,19 @@ body {
 
 /* Gaya untuk gambar produk */
 .card-img-top {
-  width: 100%; /* Menyesuaikan lebar gambar dengan lebar kartu */
-  height: 200px; /* Menyesuaikan tinggi gambar agar proporsional */
-  object-fit: cover; /* Memastikan gambar diisi dengan kartu */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 /* Gaya untuk tombol primer */
 .btn-primary {
-  background-color: #3f51b5; /* Warna tombol */
+  background-color: #3f51b5;
   border-color: #3f51b5;
 }
 
 .btn-primary:hover {
-  background-color: #303f9f; /* Warna tombol saat dihover */
+  background-color: #303f9f;
   border-color: #303f9f;
 }
 
@@ -117,26 +114,59 @@ body {
 footer {
   background-color: #343a40;
   border-top: 1px solid #e0e0e0;
-}
-.footer-landingpage {
-  justify-content: space-between;
-  align-items: center;
+  color: #ffffff;
 }
 
-.contact-info {
-  order: 2; /* Place contact info on the right */
+.footer-landingpage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .contact-info a {
-  color: #000; /* Set color for contact info links */
-  text-decoration: none; /* Remove underline from links */
-  margin-right: 10px; /* Add some spacing between links */
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 10px;
 }
 
-.contact-info span {
-  margin-right: 10px; /* Add some spacing between links and separator */
+.about-section {
+  background-image: url('img/about.png');
+  background-size: 1200px 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 0;
+  color: black;
+  opacity: 0.9;
 }
 
-.copyright {
-  order: 1; /* Place copyright on the left */
+.about-section h2 {
+  color: black;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .navbar .navbar-collapse {
+    justify-content: flex-start;
+  }
+
+  .banner {
+    height: 300px;
+  }
+
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+
+  .banner-text p {
+    font-size: 1rem;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+
+  .about-section {
+    padding: 40px 0;
+  }
 }
