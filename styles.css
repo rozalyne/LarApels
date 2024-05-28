@@ -1,0 +1,142 @@
+/* Gaya untuk latar belakang dan teks */
+body {
+  background-color: #f5f5f5; /* Warna latar belakang abu-abu terang */
+  color: #333; /* Warna teks abu-abu gelap untuk kontras */
+}
+
+/* Gaya untuk navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Pastikan navbar tetap di atas konten */
+  background-color: #FBF9E5; /* Warna latar belakang navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan di bawah navbar */
+}
+
+.navbar .navbar-brand {
+  flex-grow: 1; /* Memperluas navbar brand agar mengambil ruang yang tersisa */
+}
+
+.navbar .navbar-collapse {
+  justify-content: center; /* Meratakan link navbar di tengah */
+}
+
+.navbar .navbar-nav {
+  display: flex; /* Mengatur menu navbar menjadi flexbox */
+  justify-content: center; /* Meratakan menu navbar di tengah */
+}
+
+.navbar .nav-item {
+  margin: 0 10px; /* Menambahkan jarak antara setiap item navbar */
+}
+
+.navbar .nav-link {
+  color: #6c757d; /* Warna teks abu-abu gelap */
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #495057; /* Warna teks abu-abu lebih gelap saat dihover */
+}
+
+/* Gaya untuk header banner */
+.banner {
+  position: relative;
+  background-image: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.0)), url('img/banner1.gif');
+  background-size: 1200px 400px;
+  background-position: center;
+  height: 400px;
+  display: flex; /* Membuat konten di dalamnya menjadi fleksibel */
+  justify-content: center; /* Meratakan konten secara horizontal */
+  align-items: center; /* Meratakan konten secara vertikal */
+}
+
+/* Gaya untuk teks di atas banner */
+.banner-text {
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.banner-text a.btn {
+  font-size: 1.5rem;
+  padding: 10px 30px;
+}
+
+/* Gaya untuk tombol di header banner */
+.banner .btn-primary {
+  background-color: green;
+  border-color: #FBF9E5;
+}
+
+.banner .btn-primary:hover {
+  background-color: #23307a;
+  border-color: #e68900;
+}
+
+/* Gaya untuk judul dan deskripsi produk */
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  margin-bottom: 1.25rem;
+}
+
+/* Gaya untuk gambar produk */
+.card-img-top {
+  width: 100%; /* Menyesuaikan lebar gambar dengan lebar kartu */
+  height: 200px; /* Menyesuaikan tinggi gambar agar proporsional */
+  object-fit: cover; /* Memastikan gambar diisi dengan kartu */
+}
+
+/* Gaya untuk tombol primer */
+.btn-primary {
+  background-color: #3f51b5; /* Warna tombol */
+  border-color: #3f51b5;
+}
+
+.btn-primary:hover {
+  background-color: #303f9f; /* Warna tombol saat dihover */
+  border-color: #303f9f;
+}
+
+/* Gaya untuk footer */
+footer {
+  background-color: #343a40;
+  border-top: 1px solid #e0e0e0;
+}
+.footer-landingpage {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+  order: 2; /* Place contact info on the right */
+}
+
+.contact-info a {
+  color: #000; /* Set color for contact info links */
+  text-decoration: none; /* Remove underline from links */
+  margin-right: 10px; /* Add some spacing between links */
+}
+
+.contact-info span {
+  margin-right: 10px; /* Add some spacing between links and separator */
+}
+
+.copyright {
+  order: 1; /* Place copyright on the left */
+}
