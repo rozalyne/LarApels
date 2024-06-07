@@ -42,7 +42,7 @@ body {
 /* Gaya untuk header banner */
 .banner {
   position: relative;
-  background-image: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.0)), url('img/banner1.gif');
+  background-image: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.0)), url('img/banner.gif');
   background-size: 1200px 400px;
   background-position: center;
   height: 400px;
