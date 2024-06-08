@@ -1,6 +1,6 @@
 /* Gaya untuk latar belakang dan teks */
 body {
-  background-color: #f5f5f5;
+  background-color: #FBF9E5;
   color: #333;
 }
 
@@ -84,6 +84,9 @@ body {
   border-color: #e68900;
 }
 
+.card{
+  background-color: #fffef665;
+}
 /* Gaya untuk judul dan deskripsi produk */
 .card-title {
   font-size: 1.25rem;
@@ -114,7 +117,7 @@ body {
 
 /* Gaya untuk footer */
 footer {
-  background-color: #343a40;
+  background-color: #FBF9E5;
   border-top: 1px solid #e0e0e0;
   color: #ffffff;
 }
@@ -143,6 +146,9 @@ footer {
 }
 
 .about-section h2 {
+  color: black;
+}
+.copyright {
   color: black;
 }
 
