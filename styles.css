@@ -2,6 +2,7 @@
 body {
   background-color: #FBF9E5;
   color: #333;
+  font-family: Arial, sans-serif;
 }
 
 /* Gaya untuk navbar */
@@ -43,9 +44,10 @@ body {
 .banner {
   position: relative;
   background-image: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.0)), url('img/banner.gif');
-  background-size: 1200px 400px;
+  background-size: cover;
   background-position: center;
-  height: 400px;
+  width: 100%;
+  padding-top: 33.33%; /* 3:1 aspect ratio (100% / 3 = 33.33%) */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,8 +55,13 @@ body {
 }
 
 .banner-text {
+  position: absolute;
   text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 
 .banner-text h1 {
   font-size: 2.5rem;
@@ -84,10 +91,14 @@ body {
   border-color: #e68900;
 }
 
-.card{
-  background-color: #fffef665;
+/* Gaya untuk card produk */
+.card {
+  background-color: #fffef6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
-/* Gaya untuk judul dan deskripsi produk */
+
 .card-title {
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
@@ -97,14 +108,12 @@ body {
   margin-bottom: 1.25rem;
 }
 
-/* Gaya untuk gambar produk */
 .card-img-top {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-/* Gaya untuk tombol primer */
 .btn-primary {
   background-color: #3f51b5;
   border-color: #3f51b5;
@@ -119,7 +128,7 @@ body {
 footer {
   background-color: #FBF9E5;
   border-top: 1px solid #e0e0e0;
-  color: #ffffff;
+  color: #333;
 }
 
 .footer-landingpage {
@@ -130,16 +139,16 @@ footer {
 }
 
 .contact-info a {
-  color: #ffffff;
+  color: #333;
   text-decoration: none;
   margin-right: 10px;
 }
 
 .about-section {
   background-image: url('img/about.png');
-  background-size: 1200px 400px;
+  background-size: cover;
   background-position: center;
-  background-repeat: repeats;
+  background-repeat: no-repeat;
   padding: 80px 0;
   color: black;
   opacity: 0.9;
@@ -148,6 +157,7 @@ footer {
 .about-section h2 {
   color: black;
 }
+
 .copyright {
   color: black;
 }
@@ -176,5 +186,9 @@ footer {
 
   .about-section {
     padding: 40px 0;
+  }
+
+  .footer-landingpage {
+    flex-direction: column;
   }
 }
